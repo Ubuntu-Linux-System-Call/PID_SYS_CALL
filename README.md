@@ -243,12 +243,27 @@ int main() {
 
 **Ctrl + X to Save it and exit the text editor.
 
+# 4.4 - Create a Makefile file.
 
+~$ nano MyApp/MakeFile
+CC=gcc
+CFLAGS=-Wall
 
+all: test
 
+test: test.c
+ $(CC) $(CFLAGS) -o test test.c
 
+clean:
+ rm -f test
 
+**Ctrl + X to Save it and exit the text editor.
 
+# 4.5 - Run the C file you just compiled.
 
+~$ ./report
+
+# 4.6 - Check the last line of the dmesg output.
+~$ dmesg
 
 
